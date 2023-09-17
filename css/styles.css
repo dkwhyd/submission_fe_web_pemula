@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+.head_bar {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  flex-basis: 80%;
+  padding: 0.2rem;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  border: 1px solid black;
+  border-radius: 10px;
+  max-height: 60vh;
+  position: sticky;
+  top: 10vh;
+}
+
+.input_section > h2 {
+  text-align: center;
+  color: cornflowerblue;
+}
+
+.input_section > form > .input {
+  margin: 8px 0;
+}
+
+.input_section > form > button {
+  background-color: cornflowerblue;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+
+label {
+  color: cornflowerblue;
+  font-weight: bold;
+}
+
+
+.input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+label {
+  color: cornflowerblue;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.search_section {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 1px 1px 10px 10px;
+  background-color: white;
+}
+
+.search_section > h3 {
+  color: cornflowerblue;
+}
+
+.search_section > form {
+  padding: 16px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.search_section > form > label {
+  display: flex;
+  align-items: center;
+}
+
+.search_section > form > input {
+  padding: 5px;
+  border-radius: 5px;
+  flex-basis: 70%;
+}
+
+.search_section > form > button {
+  background-color: cornflowerblue;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.book_item {
+  max-width: 350px;
+  margin: 0.2rem;
+
+}
+
+.book_shelf {
+  margin: 16px 0 0 0;
+  border: 1px solid black;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.book_shelf > h2 {
+  color: cornflowerblue;
+}
+
+.book_shelf > .book_list {
+  padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.book_shelf > .book_list > .book_item > h3,
+p {
+  margin: 8px 0;
+}
+
+button {
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.green {
+  background-color: darkgreen;
+  color: white;
+}
+.yellow {
+  background-color: gold;
+  color: white;
+}
+.red {
+  background-color: darkred;
+  color: white;
+}
+@media screen and (max-width: 850px) {
+  main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .input_section {
+    position: initial;
+  }
+  .search_section {
+    padding: 0;
+  }
+}
